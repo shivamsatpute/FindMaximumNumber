@@ -13,6 +13,7 @@ namespace Generics
             FindMaximumNum FindMax = new FindMaximumNum();
             FindMax.FindMaxInteger(10, 20, 150);
             FindMax.FindMaxFloat(50.4, 890.2, 159.89);
+            FindMax.FindMaxString("Apple", "Peach", "Banana");
             Console.ReadLine();
 
         }

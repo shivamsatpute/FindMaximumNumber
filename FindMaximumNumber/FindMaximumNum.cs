@@ -20,5 +20,11 @@ namespace Generics
             Console.WriteLine($"Maximum Float Number is :- {MaxResult}");
             return MaxResult;
         }
+        public string FindMaxString(string str1, string str2, string str3) 
+        {
+            string MaxResult = (str1.CompareTo(str2) > 0 ? str1 : (str2.CompareTo(str3) > 0 ? str2 : str3));
+            Console.WriteLine($"Maximum String Number is :- {MaxResult}");
+            return MaxResult;
+        }
     }
 }
