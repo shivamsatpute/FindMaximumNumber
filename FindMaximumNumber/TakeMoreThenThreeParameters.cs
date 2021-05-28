@@ -17,8 +17,12 @@ namespace Generics
         {
             Array.Sort(array); 
             var maximum = this.array[this.array.Length - 1]; 
-            Console.WriteLine($"Maximun Number is:- {maximum}"); 
+            printMax(maximum); 
             return maximum;
+        }
+        static void printMax(T maximum) 
+        {
+            Console.WriteLine($"Maximum Number is:- {maximum}");
         }
 
     }
