@@ -43,5 +43,29 @@ namespace UnitTestGeneric
 
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        [DataRow(33.33, 22.22, 11.11, 33.33)]
+        public void FindMaxFloatNumerat1stPosition(double num1 , double num2, double num3, double expectd)
+        {
+            FindMaximumNum maxOffloat = new FindMaximumNum();
+            double actual = maxOffloat.FindMaxFloat(num1, num2, num3);
+            Assert.AreEqual(expectd, actual);
+        }
+        [TestMethod]
+        [DataRow(11.11, 33.33, 22.22, 33.33)]
+        public void FindMaxFloatNumerat2stPosition(double num1, double num2, double num3, double expectd)
+        {
+            FindMaximumNum maxOffloat = new FindMaximumNum();
+            double actual = maxOffloat.FindMaxFloat(num1, num2, num3);
+            Assert.AreEqual(expectd, actual);
+        }
+        [TestMethod]
+        [DataRow(11.11, 22.22, 33.33, 33.33)]
+        public void FindMaxFloatNumerat3stPosition(double num1, double num2, double num3, double expectd)
+        {
+            FindMaximumNum maxOffloat = new FindMaximumNum();
+            double actual = maxOffloat.FindMaxFloat(num1, num2, num3);
+            Assert.AreEqual(expectd, actual);
+        }
     }
 }

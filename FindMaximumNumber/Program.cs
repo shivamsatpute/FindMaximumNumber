@@ -10,7 +10,11 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            FindMaximumNum FindMax = new FindMaximumNum();
+            FindMax.FindMaxInteger(10, 20, 150);
+            FindMax.FindMaxFloat(50.4, 890.2, 159.89);
+            Console.ReadLine();
+
         }
     }
 }
